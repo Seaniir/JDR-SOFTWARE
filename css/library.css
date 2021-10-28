@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Gotham-Ultra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham-Ultra'), url('../font/Gotham-Ultra.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Gotham-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham-Medium'), url('../font/Gotham-Medium.otf') format('opentype');
+  }
+
+body{
+    background-color: #0a0b29;
+    font-family: "Gotham-Medium";
+}
+
+.card{
+    float: right;
+}
+
+.gButtons{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#bookCardsContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bookCards{
+    position: relative;
+    margin: 2%;
+    margin-top: 5%;
+    width: 29%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgb(33,17,79);
+    background: linear-gradient(180deg, rgba(33,17,79,1) 0%, rgba(10,11,41,1) 100%);
+}
+
+.bookCards h5:nth-child(1){
+    font-family: "Gotham-Ultra";
+    text-align: center;
+    position: absolute;
+    color: white;
+    left: 42%;
+    top: 5%;
+    width: 50%;
+}
+
+.bookCards h5:nth-child(2){
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    margin-bottom: 20px;
+    left: 5%;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    background-color: #264a20;
+}
+
+.bookCards h5:nth-child(3){
+display: inline;
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    width: auto;
+    position: relative;
+    top: 29%;
+    left: 18%;
+    background-color: #32204a;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bookCards a{
+    background-color: rgb(111, 15, 68);
+    padding: 0;
+    padding-top: 0.5%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 89%;
+    top: 71.5%;
+}
+
+.bookCards h5{
+    position: relative;
+    top: -40px;
+    left: 70px;
+}
+
+.bookCards img{
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+    width: 120px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.bookCards #imagebutton{
+    width: auto;
+    position: absolute;
+    left: 56%;
+    top: 50%;
+    color: white;
+    background-color: rgb(111, 15, 68);
+    border-radius: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search{
+    display: none;
+}
+
+.active-tab {
+    top: 60.5px;
+  }
+  
+.orderBy{
+    display: inline;
+    height: 25px;
+}
